@@ -12,9 +12,5 @@ const grid = {
 
 const snake = {
     direction: 'right',
-    body: [
-        { x: 5, y: 2 },
-        { x: 4, y: 2 },
-        { x: 3, y: 2 }
-    ]
+    body: []
 }

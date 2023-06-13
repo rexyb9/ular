@@ -7,6 +7,7 @@ document.addEventListener('keydown', handleKey)
 
 function main() {
     createCanvas()
+    reset()
     asd = setInterval(gameLoop, 1000 / fps)
 }
 
@@ -20,6 +21,14 @@ function gameLoop() {
     update()
     draw()
 }
+function reset() {
+    snake.body = [
+        { x: 5, y: 2 },
+        { x: 4, y: 2 },
+        { x: 3, y: 2 },
+    ]
+    snake.direction = 'right'
+}
 
 function update() {
     const head = snake.body[0]
@@ -32,6 +41,13 @@ function update() {
 
     snake.body.unshift(newHead)
     snake.body.pop()
+
+    if (
+        (newHead.x < 0) || (newHead.y < 0)
+        || (newHead.x > grid.col) || (newHead.y > grid.row)
+    ) {
+        reset()
+    }
 }
 
 function draw() {

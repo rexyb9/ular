@@ -5,7 +5,7 @@ function drawSnake() {
         var h = canvasSize.height / grid.row
         var x = body.x * w
         var y = body.y * h
-        var color = (i === 0) ? '#3669c2' : '#487edb'
+        var color = (i === 0) ? '#2d55e3' : '#6581e6'
         drawRect(x, y, w, h, color, 'black')
     }
 }
