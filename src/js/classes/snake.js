@@ -1,4 +1,3 @@
-'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
 function drawSnake() {
     for (let i = 0; i < snake.body.length; i++) {
         const body = snake.body[i]

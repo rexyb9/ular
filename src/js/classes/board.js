@@ -1,4 +1,3 @@
-'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
 function drawBoard() {
     for (let i = 0; i < grid.col; i++) {
         for (let j = 0; j < grid.row; j++) {
